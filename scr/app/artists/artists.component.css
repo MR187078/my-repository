@@ -1,0 +1,40 @@
+h1 {
+    color: #fe9800;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+/* Estilos CSS para alinear las tarjetas en una fila */
+.card-deck, .card-deck2 {
+    display: flex; /* Usar display flex para hacer que los elementos hijos se comporten como elementos flexibles */
+    flex-wrap: nowrap; /* Evitar que los elementos se envuelvan a la siguiente línea */
+    justify-content: center; /* Distribuir el espacio restante entre las tarjetas */
+    gap: 20px;/* Espacio entre Tarjetas*/
+
+}
+
+.card-deck, .card-deck2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    flex: 1; /* Permite que las tarjetas crezcan y se encojan para ocupar el espacio disponible */
+    max-width: calc(30% - 30px); /* Ajusta el ancho máximo de las tarjetas */
+    margin-bottom: 150px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+
+.card-title{
+    color: #fe9800;
+    text-align: center;
+    margin: 50px;
+    
+}
