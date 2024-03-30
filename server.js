@@ -52,7 +52,7 @@ app.post('/login', (req, res) => {
         }
 
         // Si el usuario existe, crea un token JWT y envíalo como respuesta
-        const token = jwt.sign({ id: results[0].id }, 'localhost', { expiresIn: '1h' });
+        const token = jwt.sign({ id: results[0].id }, 'bplygdu6jwg3nwtszvhf-mysql.services.clever-cloud.com', { expiresIn: '1h' });
         res.send({ success: true, token });
     });
 });
