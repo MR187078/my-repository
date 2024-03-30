@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Configura la conexión a la base de datos MySQL
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'latinpowermusic'
+    host: 'bplygdu6jwg3nwtszvhf-mysql.services.clever-cloud.com',
+    user: 'uf83iptrh2lnmylj',
+    password: '4vv6VVOxZiXVTLEmd9sL',
+    database: 'bplygdu6jwg3nwtszvhf'
 });
 
 // Conecta a la base de datos MySQL
