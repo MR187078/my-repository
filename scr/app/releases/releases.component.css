@@ -1,75 +1,84 @@
-/* Establece el color del texto en blanco para todo el cuerpo del documento */
-body {
-    color: white;
-}
-
 h1 {
+    color: #ffffff;
     text-align: center;
-    margin-bottom: 100px;
-    color: orange;
-}
-
-h2{
-
-    margin-bottom: 100px;
-    color: white;
-    text-align: center;
+    margin-bottom: 2%;
 }
 
 
-.lista li{
-    margin-bottom: 35px;
-}
-/* Define un estilo para los elementos con la clase 'border', estableciendo el ancho al 50% */
-.border {
-    width: 50%;
-}
-
-/* Define un estilo para los elementos con la clase 'card-artista' */
-.card-artista {
-    /* Establece el ancho al 100% */
-    width: 60%;
-    /* Utiliza flexbox para alinear los elementos hijos horizontalmente */
+.container {
+    max-width: 100%;
+    margin-left:3%;
     display: flex;
-    margin-bottom: 20px;
-    
+    flex-wrap: wrap;
 }
 
-/* Define un estilo para los elementos con la clase 'contenedor' */
-.contenedor {
-    /* Dibuja un borde naranja alrededor del elemento */
-    border: 2px solid orange;
-    /* Aplica un margen de 50 píxeles */
-    margin: 50px;
-    
+.release {
+    background-color: #000000;
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    max-width: 350px;
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Define un estilo para los elementos con el ID 'miImagen' */
-#miImagen {
-    /* Establece el ancho al 100% */
+.release:hover {
+    transform: translateY(-20px);
+}
+
+.release img {
     width: 100%;
-    /* Establece la altura automática */
     height: auto;
-    /* Aplica márgenes específicos */
-    margin: 12% -12% -12% 12%;
 }
 
-/* Define un estilo para los elementos con la clase 'artistas' */
-.artistas {
-    /* Aplica un margen superior de 25 píxeles */
-    margin-top: 60px;
-    /* Aplica un margen izquierdo de 4% */
-    margin-left: 4%;
+.release-content {
+    padding: 20px;
+    border: 2px solid #fe9800;
 }
 
+.release-content h2 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #fe9800;
+    text-align: center;
+}
 
+.release-content p {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
 
+.release-content .btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.btn {
+    background-color: #fe9800;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.btn:hover {
+    background-color: #fe9800;
+}
 
-
-
-.tarjeta {
-    margin-top: 60px; /* Ajusta este valor según sea necesario para mover las tarjetas hacia abajo */
-    /* Otros estilos de las tarjetas */
+@media only screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 6%;
+    }
 }
