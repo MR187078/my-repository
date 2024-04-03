@@ -8,6 +8,7 @@ header {
     display: flex;
     align-items: center;
     height: 7vh;
+
 }
 
 .nav-link-lpm {
@@ -23,12 +24,12 @@ header {
     align-items: center;
     max-width: 80%;
     max-height: 80%;
-    margin-left: 10% ;
+    margin-left: 10%;
 }
 
 .logo-lpm img {
-    width: 100%;
-    height: 100%;
+    width: 70px;
+    height: 70px;
 }
 
 .menu {
@@ -53,14 +54,15 @@ header {
     max-width: 60%;
     min-height: 60%;
 }
+
 .shopping-car {
     display: flex;
     align-items: center;
 }
 
 .shopping-car img {
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height: 23px;
 }
 
 .nav-link-shopping-car:after {
@@ -82,8 +84,8 @@ header {
 }
 
 .hamburger-button img {
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -93,12 +95,12 @@ header {
     top: 100%;
     left: -60px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave y desplazada hacia abajo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    width: 120px; /* Ajusta el ancho según sea necesario */
-    border: 3px solid #fe9800; /* Borde para definir el límite del modal */
-    border-radius: 8px; /* Esquinas redondeadas */
-    overflow: hidden; /* Asegura que los bordes redondeados se muestren correctamente */
+    width: 120px;
+    border: 3px solid #fe9800;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .options-container ul {
@@ -113,12 +115,12 @@ header {
     color: #000;
 }
 
-.options-container li a{
+.options-container li a {
     color: #000;
 }
 
 .options-container li:last-child {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 a {
@@ -244,5 +246,70 @@ h2 {
 }
 
 .active {
-    color:#ffffff;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        margin-top: 17px;
+        margin-right: 5px;
+    }
+
+    .nav-link-lpm {
+        width: 100px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .nav-link-lpm img {
+        width: 50px;
+        height: auto;
+    }
+
+    .menu {
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: 0;
+
+    }
+
+    .shopping-car {
+        margin-top: 15px;
+        margin-right: 70px;
+    }
+
+    .hamburger-button {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    .shopping-car img {
+        width: 20px;
+        height: auto;
+    }
+
+    .hamburger-button img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .col-md-1,
+    .footer .col-md-2,
+    .footer .col-md-3,
+    .footer .col-md-4 {
+        margin-left: 0;
+    }
 }
