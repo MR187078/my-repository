@@ -196,12 +196,13 @@ h2 {
 @media only screen and (max-width: 768px) {
 
     .navbar {
-        padding: 0 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
     .nav-link {
         font-size: 8px;
-        margin-right: 2px;
+        margin-right: 5px;
     }
 
     .nav-link-lpm {
