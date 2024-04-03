@@ -25,7 +25,7 @@ export class LoginComponent {
       const contrasena = this.loginForm.get('contrasena')?.value;
 
       try {
-        const response = await fetch('https://latin-power-music-30ahe2i0n-marks-projects-f3365aa7.vercel.app', {
+        const response = await fetch('https://latin-power-music.vercel.app/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ correo, contrasena })
