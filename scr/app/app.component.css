@@ -2,12 +2,14 @@ header {
     background-color: #fe9800;
     color: #000;
     padding: 10px 20px;
+    width: 100%;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     height: 7vh;
+    width: 100%;
 
 }
 
